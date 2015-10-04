@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style type="text/css">
+     
+     #demo{
+     	color: blue;
+     }
+
+    </style>
+
+</head>
+<body>
+
+<p>Creating a JavaScript OOP.</p>
+
+<p id="demo"></p>
+
+<script>
+function cat (name) {
+	this.name=name;
+	this.talk=function(){
+		alert(this.name+" say meooo !")
+	}
+
+}
+
+cat1=new cat("dody")
+cat1.talk()
+
+cat2=new cat("baby")
+cat2.talk()
+
+cat.prototype.change_name = function(name) {
+	this.name=name;
+};
+
+firstname=new cat("melo")
+firstname.change_name("mesho")
+firstname.talk()
+
+</script>
+
+</body>
+</html>
