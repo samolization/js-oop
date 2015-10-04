@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style type="text/css">
+     
+     #demo{
+     	color: blue;
+     }
+
+    </style>
+
+</head>
+<body>
+
+<p>Creating a JavaScript OOP.</p>
+
+<p id="demo"></p>
+
+<script>
+
+function basicclass (){
+   //body
+}
+
+basicclass.prototype.getname = function() {
+	return (" basic ");
+	
+};
+
+function subclass(){
+
+}
+subclass.prototype = new basicclass;
+
+subclass.prototype.getname = function() {
+	return ("inherit done");
+	// body...
+};
+
+alert(new subclass().getname() );
+</script>
+
+</body>
+</html>
