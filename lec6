@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style type="text/css">
+     
+     #demo{
+     	color: blue;
+     }
+
+    </style>
+
+</head>
+<body>
+
+<p>Creating a JavaScript OOP.</p>
+
+<button onclick="myfunction()">click here</button>
+<p id="demo"></p>
+
+
+ 
+
+<script>
+
+
+
+function myfunction() {
+    var index;
+    var text = "<ul>";
+    var fruits = ["Banana", "Orange"];
+
+    for (index = 0; index < fruits.length; index++) {
+        text += "<li>" + fruits[index] + "</li>";
+    }
+
+	
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text;
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
